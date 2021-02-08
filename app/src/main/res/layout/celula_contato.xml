@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:layout_margin="5dp"
+    android:backgroundTint="@android:color/transparent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@android:color/transparent"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imageFoto"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ppl" />
+
+        <LinearLayout
+            android:layout_width="209dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textoNome"
+                android:layout_width="246dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Nome do Contato"
+                android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/btnLigar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/call" />
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
